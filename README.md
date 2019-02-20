@@ -5,6 +5,8 @@
 
 ![Screenshot](https://raw.githubusercontent.com/gerritgr/PlagiPy/master/example.png)
 
+![Screenshot](https://i.imgur.com/xEaj4sw.png)
+
 ## Overview
 Implementation of a super simple plagiarism checker in Python.
 A CherryPy-based webinterface makes it easy to see which parts of a text have likely been copied. 
