@@ -3,7 +3,7 @@ import cherrypy
 import webbrowser
 import random
 import string
-import compare_texts_bigram
+import compare_texts
 try:
     webbrowser.open('http://127.0.0.1:8080')
 except:
@@ -41,7 +41,7 @@ class StringGenerator(object):
         textinput = remove_html(textinput)
         textinput2 = remove_html(textinput2)
         assert('span' not in textinput)
-        textinput, textinput2, score = compare_texts_bigram.main(textinput, textinput2)
+        textinput, textinput2, score = compare_texts.main(textinput, textinput2)
         #score = score[-1]
         frame_color = score_to_color(score)
         score_str = str(score)
