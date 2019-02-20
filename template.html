@@ -1,0 +1,74 @@
+<html>
+          <head>
+            <style>
+                #submitButton {
+                      background-color: CadetBlue;  /* #4CAF50; /* Green */
+                      border: none;
+                      color: white;
+                      padding: 15px 32px;
+                      text-align: center;
+                      text-decoration: none;
+                      display: inline-block;
+                      font-size: 16px;
+                }
+                #wrapper {
+                    width: 100%;
+                    overflow: hidden; /* add this to contain floated children */
+                }
+                #wrapper2 {
+                    width: 100%;
+                    overflow: hidden; /* add this to contain floated children */
+                }
+                #editor {
+                    width: 40%;
+                    margin-bottom: 1cm;
+                    margin-right: 2em;
+                    float:left; /* add this */
+                    border: 2px solid {framecolor};
+                    height: 800px;
+                    overflow: auto;
+                }
+                #editor2 {
+                    width: 40%;
+                    border: 2px solid {framecolor};
+                    margin-bottom: 1cm;
+                    margin-right: 2em;
+                    float: left; /* add this */
+                    height: 800px;
+                     overflow: auto;
+                }
+                #vspace {
+                    width: 10px;
+                    float: left; /* add this */
+                }
+                p{
+                    color: {framecolor};
+                    font-family:verdana;
+                    font-size:120%
+                }
+            </style>
+          </head>
+          <body>
+                <div id="wrapper">
+                    <div id="editor" contenteditable="true"  >{textinput}</div>
+                    <div id="editor2" contenteditable="true">{textinput2}</div>
+
+                </div>
+                <div style="text-align: center; width:62%">
+                    <form id="form1" method="post" action="index">
+                    <input id="contentedit" name="textinput" type="hidden">
+                    <input id="contentedit2" name="textinput2" type="hidden">
+                    <button type="submit" id="submitButton" style="font-size: 26px">Compare!</button>
+                    <p>Similarity Score: {score}</p>
+                    </form>
+                </div>
+            <script>
+                var editor = document.getElementById("editor")
+                var editor2 = document.getElementById("editor2")
+                document.getElementById('form1').addEventListener('submit', function(){
+                    document.getElementById('contentedit').value = editor.innerHTML;
+                    document.getElementById('contentedit2').value = editor2.innerHTML;
+                });
+            </script>
+          </body>
+        </html>
