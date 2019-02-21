@@ -35,3 +35,6 @@ libc++abi.dylib: terminating with uncaught exception of type NSException
 Abort trap: 6
 ```
 remove the line `webbrowser.open('http://127.0.0.1:8080')` in `start_interface.py` and manually open the browser.
+
+
+You may also checkout <https://copyleaks.com/compare> for a similar (arguably more advanced) cloud-based service. 
