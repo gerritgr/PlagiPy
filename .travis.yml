@@ -4,4 +4,4 @@ python:
 install:
   - pip install -r requirements.txt
 script:
-  - python compare_texts_bigram.py
+  - python compare_texts.py

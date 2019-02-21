@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.com/gerritgr/PlagiPy.svg?branch=master)](https://travis-ci.com/gerritgr/PlagiPy)
 
 
-![Screenshot](https://raw.githubusercontent.com/gerritgr/PlagiPy/master/example.png){:height="50%" width="50%"}
+![Screenshot](https://raw.githubusercontent.com/gerritgr/PlagiPy/master/example.png)
 
 
 ## Overview
